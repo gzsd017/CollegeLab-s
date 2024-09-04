@@ -1,0 +1,25 @@
+program a;
+
+var
+x: real;
+
+begin
+x := -11;
+writeln('x    | f(x)');
+writeln('-----------------');
+
+while x <= 8 do
+begin
+if x < -9 then
+writeln(x:5:1, ' | ', (log10(x) / 24 + log10(x)):5:4)
+else if (x >= -9) and (x < -2) then
+writeln(x:5:1, ' | ', (ln(x) * sin(x)):5:4)
+else if (x >= -2) and (x < 6) then
+writeln(x:5:1, ' | ', (x + ln(x)):5:4)
+else
+writeln(x:5:1, ' | ', (83 - sin(x)):5:4);
+
+x := x + 0.3;
+
+end;
+end.
